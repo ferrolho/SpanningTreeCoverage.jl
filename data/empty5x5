@@ -1,0 +1,9 @@
+# name: empty5x5
+# type: matrix
+# rows: 5
+# columns: 5
+ 2 0 0 0 0
+ 0 0 0 0 0
+ 0 0 0 0 0
+ 0 0 0 0 0
+ 0 0 0 0 0
