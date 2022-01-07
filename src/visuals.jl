@@ -39,4 +39,10 @@ function plot_mst!(p, dims, obstacle_nodes, mst)
     p
 end
 
-export plot_area, plot_mst!
+function plot_guide!(p, guide)
+    points = mapreduce(x -> [x...], hcat, guide)
+    scatter!(p, points[2, :], points[1, :], markercolor = :black,
+        markershape = :rect, markersize = 1, markerstrokewidth = 0.01)
+end
+
+export plot_area, plot_mst!, plot_guide!

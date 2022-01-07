@@ -39,4 +39,27 @@ function calculate_mst(dims, obstacle_nodes; algorithm_mst = kruskal_mst)
     algorithm_mst(g)
 end
 
-export subdivide_area, calculate_obstacle_nodes, calculate_mst
+function calculate_guide(dims, obstacle_nodes, mst)
+    xu, yu = dims
+    cis = CartesianIndices((1:xu, 1:yu))
+
+    xs = [ci[1] * 2 - 0.5 for (i, ci) in enumerate(cis) if i ∉ obstacle_nodes]
+    ys = [ci[2] * 2 - 0.5 for (i, ci) in enumerate(cis) if i ∉ obstacle_nodes]
+
+    guide = Set(SVector{2,Float64}[])
+
+    for e in mst
+        v1, v2 = e.src, e.dst
+        p1 = SVector(xs[v1], ys[v1])
+        p2 = SVector(xs[v2], ys[v2])
+        v = (p2 - p1) / 4
+        for i = 0:4
+            x = p1 + i * v
+            push!(guide, x)
+        end
+    end
+
+    guide
+end
+
+export subdivide_area, calculate_obstacle_nodes, calculate_mst, calculate_guide
