@@ -22,4 +22,21 @@ function plot_area(area)
     p
 end
 
-export plot_area
+function plot_mst!(p, dims, obstacle_nodes, mst)
+    xu, yu = dims
+    cis = CartesianIndices((1:xu, 1:yu))
+
+    xs = [ci[1] * 2 - 0.5 for (i, ci) in enumerate(cis) if i ∉ obstacle_nodes]
+    ys = [ci[2] * 2 - 0.5 for (i, ci) in enumerate(cis) if i ∉ obstacle_nodes]
+
+    g_mst = SimpleGraph(mst)
+
+    graphplot!(p, g_mst, x = ys, y = xs, curves = false,
+        nodecolor = 3, nodeshape = :circle,
+        nodesize = 2, nodestrokewidth = 0.01
+    )
+
+    p
+end
+
+export plot_area, plot_mst!
