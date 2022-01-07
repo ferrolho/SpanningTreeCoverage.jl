@@ -2,3 +2,6 @@ name = "SpanningTreeCoverage"
 uuid = "0a57d04b-de13-4fc9-9359-3d089981ee70"
 authors = ["Henrique Ferrolho <henrique.ferrolho@gmail.com>"]
 version = "0.1.0"
+
+[deps]
+Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
