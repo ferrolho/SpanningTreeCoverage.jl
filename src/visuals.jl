@@ -45,4 +45,13 @@ function plot_guide!(p, guide)
         markershape = :rect, markersize = 1, markerstrokewidth = 0.01)
 end
 
-export plot_area, plot_mst!, plot_guide!
+function plot_path!(p, path)
+    xs = map(x -> x[1], path)
+    ys = map(x -> x[2], path)
+
+    plot!(p, ys, xs, color = :blue, style = :dot, linewidth = 0.5)
+
+    p
+end
+
+export plot_area, plot_mst!, plot_guide!, plot_path!
