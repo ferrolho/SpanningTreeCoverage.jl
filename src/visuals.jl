@@ -1,7 +1,7 @@
 function plot_area(area)
     area_w, area_h = size(area)
     plot_w, plot_h = 600, 600
-    marker_w = 0.5 * plot_w / area_w
+    marker_w = 0.5 * plot_w / max(area_w, area_h)
 
     p = plot(
         aspect_ratio = :equal, size = (plot_w, plot_h),
