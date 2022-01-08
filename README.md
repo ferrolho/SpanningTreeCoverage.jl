@@ -5,8 +5,8 @@ An optimal O(n) algorithm for single-robot Coverage Path Planning (CPP), impleme
 
 ## Jupyter notebooks
 
-- [Benchmarks](https://nbviewer.org/github/ferrolho/SpanningTreeCoverage.jl/blob/main/notebooks/benchmarks.ipynb) - Performance benchmarks of the methods in this package.
-- [Demo](https://nbviewer.org/github/ferrolho/SpanningTreeCoverage.jl/blob/main/notebooks/demo.ipynb) - Demonstrates the features of this package.
+- [Benchmarks](https://nbviewer.org/urls/gist.githubusercontent.com/ferrolho/2a70e571213e1dcf8094d12f863ed537/raw/59115605bbc4ccd09ed591638c9d5364ed06e46f/benchmarks.ipynb) - Performance benchmarks of the methods in this package.
+- [Demo](https://nbviewer.org/urls/gist.githubusercontent.com/ferrolho/2a70e571213e1dcf8094d12f863ed537/raw/59115605bbc4ccd09ed591638c9d5364ed06e46f/demo.ipynb) - Demonstrates the features of this package.
 
 
 ## Step-by-step overview of the method
