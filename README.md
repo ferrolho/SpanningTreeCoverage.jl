@@ -16,6 +16,19 @@ An optimal O(n) algorithm for single-robot Coverage Path Planning (CPP), impleme
 
 ## Gallery
 
+### Animations
+
+Clicking on one of the animations below should open its MP4 version (hosted on [Gfycat](https://gfycat.com/)).
+
+<table>
+  <tr>
+    <td align="center"><a href="https://giant.gfycat.com/SandyGloomyCondor.mp4"><img src="./assets/animations/map1_480p.gif" alt="map1"/></a><br/><a href="./data/map1"><code>map1</code></a></td>
+    <td align="center"><a href="https://giant.gfycat.com/HighValidIsopod.mp4"><img src="./assets/animations/map2_480p.gif" alt="map2"/></a><br/><a href="./data/map2"><code>map2</code></a></td>
+    <td align="center"><a href="https://giant.gfycat.com/RegalFalseBordercollie.mp4"><img src="./assets/animations/map3_480p.gif" alt="map3"/></a><br/><a href="./data/map3"><code>map3</code></a></td>
+  </tr>
+</table>
+
+
 ### Images
 
 <table>
