@@ -143,4 +143,15 @@ function calculate_circumnavigation_path(new_area, guide)
     path
 end
 
-export subdivide_area, calculate_obstacle_nodes, calculate_mst, calculate_guide, calculate_circumnavigation_path
+"""
+Solve the single-robot Coverage Path Planning (CPP).
+"""
+function solve(area)
+    new_area = subdivide_area(area)
+    obstacle_nodes = calculate_obstacle_nodes(area)
+    mst = calculate_mst(size(area), obstacle_nodes)
+    guide = calculate_guide(size(area), obstacle_nodes, mst)
+    path = calculate_circumnavigation_path(new_area, guide)
+end
+
+export subdivide_area, calculate_obstacle_nodes, calculate_mst, calculate_guide, calculate_circumnavigation_path, solve
