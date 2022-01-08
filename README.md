@@ -14,6 +14,30 @@ An optimal O(n) algorithm for single-robot Coverage Path Planning (CPP), impleme
 ![algorithm](./assets/algorithm.png)
 
 
+## Gallery
+
+### Images
+
+<table>
+  <tr>
+    <td align="center"><img src="./assets/images/empty5x5.png" alt="empty5x5"/><br/><a href="./data/empty5x5"><code>empty5x5</code></a></td>
+    <td align="center"><img src="./assets/images/map1.png" alt="map1"/><br/><a href="./data/map1"><code>map1</code></a></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/images/map2.png" alt="map2"/><br/><a href="./data/map2"><code>map2</code></a></td>
+    <td align="center"><img src="./assets/images/map3.png" alt="map3"/><br/><a href="./data/map3"><code>map3</code></a></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/images/darp.png" alt="map1" width="100%"/><br/><a href="./data/darp"><code>darp</code></a></td>
+    <td align="center"><img src="./assets/images/tunnel.png" alt="tunnel" width="100%"/><br/><a href="./data/tunnel"><code>tunnel</code></a></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="./assets/images/test.png" alt="test" width="100%"/><br/><a href="./data/test"><code>test</code></a></td>
+    <td align="center"><img src="./assets/images/pillars.png" alt="pillars" width="100%"/><br/><a href="./data/pillars"><code>pillars</code></a></td>
+  </tr>
+</table>
+
+
 ## Similar projects
 
 - DARP: Divide Areas Algorithm for Optimal Multi-Robot Coverage Path Planning
